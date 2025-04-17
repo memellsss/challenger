@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c88h365klr40g"
-path="res://.godot/imported/Soldier_Hit.png-1ee65a81bd535f1086a4d4d7b199a778.ctex"
+path="res://.godot/imported/Soldier_Hit.png-99b7815f9db13b6b1119c712343b65f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://caracters and objects/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Soldier/Soldier_Hit.png"
-dest_files=["res://.godot/imported/Soldier_Hit.png-1ee65a81bd535f1086a4d4d7b199a778.ctex"]
+source_file="res://caracters and objects/Demo Soldier&Orc/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Soldier/Soldier_Hit.png"
+dest_files=["res://.godot/imported/Soldier_Hit.png-99b7815f9db13b6b1119c712343b65f0.ctex"]
 
 [params]
 

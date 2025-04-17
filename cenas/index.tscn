@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cl5pxcxwwsr2b"]
 
-[ext_resource type="Texture2D" uid="uid://bvuegxke7rv8n" path="res://caracters and objects/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Soldier/Soldier.png" id="2_8ve1d"]
+[ext_resource type="Texture2D" path="res://caracters and objects/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Soldier/Soldier.png" id="2_8ve1d"]
 [ext_resource type="Script" path="res://cenas/index.gd" id="2_yqf83"]
 
 [sub_resource type="Animation" id="Animation_28v5h"]

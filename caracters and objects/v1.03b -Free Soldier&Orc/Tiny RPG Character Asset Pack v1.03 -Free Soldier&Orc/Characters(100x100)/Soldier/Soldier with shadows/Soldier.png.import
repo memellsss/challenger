@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhguloiofoar2"
-path="res://.godot/imported/Soldier.png-8617c8cbfdeaf00874bd6b825b073e75.ctex"
+path="res://.godot/imported/Soldier.png-dbb6d0aff63316661880e23e0b3ace72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://caracters and objects/Tiny RPG Character Asset Pack v1.03b -Free Soldier&Orc/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier.png"
-dest_files=["res://.godot/imported/Soldier.png-8617c8cbfdeaf00874bd6b825b073e75.ctex"]
+source_file="res://caracters and objects/v1.03b -Free Soldier&Orc/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier.png"
+dest_files=["res://.godot/imported/Soldier.png-dbb6d0aff63316661880e23e0b3ace72.ctex"]
 
 [params]
 

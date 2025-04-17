@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://cl5pxcxwwsr2b"]
+
+[ext_resource type="Texture2D" uid="uid://bvuegxke7rv8n" path="res://caracters and objects/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Soldier/Soldier.png" id="2_8ve1d"]
+[ext_resource type="Script" path="res://cenas/index.gd" id="2_yqf83"]
+
+[sub_resource type="Animation" id="Animation_28v5h"]
+resource_name = "walk"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.533333, 0.666667, 0.8, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 9, 10, 11, 12, 13, 14, 15, 16]
+}
+
+[sub_resource type="Animation" id="Animation_x14y0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6vhg6"]
+_data = {
+"RESET": SubResource("Animation_x14y0"),
+"walk": SubResource("Animation_28v5h")
+}
+
+[node name="Character" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(-3, -7.62939e-06)
+scale = Vector2(1.01977, 0.99)
+texture = ExtResource("2_8ve1d")
+offset = Vector2(14.275, -8.03)
+hframes = 9
+vframes = 8
+script = ExtResource("2_yqf83")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6vhg6")
+}
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+position = Vector2(13.7286, -7.07069)
+scale = Vector2(1, 1)
+zoom = Vector2(10, 10)

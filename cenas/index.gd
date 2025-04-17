@@ -1,112 +1,93 @@
 extends Sprite2D
 
+# Nodes
+@onready var animation_player = $AnimationPlayer
+@onready var camera = $Camera2D
 
-# Called when the node enters the scene tree for the first time.
-
-@onready var _animation_player = $AnimationPlayer
-func _ready():
-	_animation_player.play("walk")
-
-@onready var anim = $AnimationPlayer
-
+# Enumerador para estados
 enum State {
-idle,
-	jump,
-	attack_sword,
-	strong_attack_sword,
-	bow_attack,
-	strong_bow_attack,
-	hit,
-	die
+	IDLE,
+	WALK,
+	JUMP,
+	ATTACK,
+	HIT,
+	DIE
 }
 
-var current_state: State = State.idle
+var current_state: State = State.IDLE
 
-func _physics_process(_idle):
-	if current_state == State.die:
+# Variáveis de movimento
+var speed := 200
+var velocity := Vector2.ZERO
+
+func _ready():
+	animation_player.play("idle")
+
+func _physics_process(delta):
+	if current_state == State.DIE:
 		return
 
-
-
-var move_speed := 200.0
-var velocity: Vector2 = Vector2.ZERO
-
-func _process(delta):
-	if Input.is_action_pressed("ui_right"):
-		_animation_player.play("walk")
-	else:
-		_animation_player.stop()
-
+	handle_input()
 	handle_movement(delta)
 
-func handle_movement(delta):
+func handle_input():
 	if is_busy():
-		velocity = Vector2.ZERO
+		return
+
+	if Input.is_action_just_pressed("ui_accept"):
+		attack("sword_attack")
+	elif Input.is_action_just_pressed("ui_up"):
+		jump()
+	elif Input.is_action_just_pressed("attack_z"):
+		attack("strong_sword_attack")
+	elif Input.is_action_just_pressed("attack_x"):
+		attack("bow_attack")
+	elif Input.is_action_just_pressed("attack_c"):
+		attack("strong_bow_attack")
+
+func handle_movement(delta):
+	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	velocity = direction * speed
+	
+	if direction != Vector2.ZERO:
+		if current_state == State.IDLE:
+			current_state = State.WALK
+			animation_player.play("walk")
 	else:
-		var dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-		velocity = dir * move_speed
+		if current_state == State.WALK:
+			current_state = State.IDLE
+			animation_player.play("idle")
 
 	position += velocity * delta
 
-
-func handle_input():
-	if is_busy():  # impede ações durante animações críticas
-		return
-
-	if Input.is_action_just_pressed("jump"):
-		pular()
-	elif Input.is_action_just_pressed("attack_sword"):
-		ataque_espada()
-	elif Input.is_action_just_pressed("strong_attack_sword"):
-		ataque_espada_carregado()
-	elif Input.is_action_just_pressed("bow_attack"):
-		atirar_bow_attack()
-	elif Input.is_action_just_pressed("strong_bow_attack"):
-		atirar_strong_bow_attack()
-	elif Input.is_action_just_pressed("hit"):
-		tomar_hit()
-	elif Input.is_action_just_pressed("die"):
-		morrer()
-
 func is_busy() -> bool:
-	return current_state in [State.attack_sword, State.strong_attack_sword, State.bow_attack, State.strong_bow_attack, State.hit, State.die]
+	return current_state in [State.ATTACK, State.JUMP, State.HIT, State.DIE]
 
-# ==== AÇÕES ====
+# === Ações ===
 
-func pular():
-	current_state = State.jump
-	anim.play("pular")
+func attack(anim_name):
+	current_state = State.ATTACK
+	animation_player.play(anim_name)
+	await animation_player.animation_finished
+	current_state = State.IDLE
+	animation_player.play("idle")
 
-func ataque_espada():
-	current_state = State.attack_sword
-	anim.play("espada")
-	await anim.animation_finished
-	current_state = State.idle
+func jump():
+	current_state = State.JUMP
+	animation_player.play("jump")
+	await animation_player.animation_finished
+	current_state = State.IDLE
+	animation_player.play("idle")
 
-func ataque_espada_carregado():
-	current_state = State.strong_attack_sword
-	anim.play("espada_carregado")
-	await anim.animation_finished
-	current_state = State.idle
+func hit():
+	current_state = State.HIT
+	animation_player.play("hit")
+	await animation_player.animation_finished
+	current_state = State.IDLE
+	animation_player.play("idle")
 
-func atirar_bow_attack():
-	current_state = State.bow_attack
-	anim.play("bow_attack")
-	await anim.animation_finished
-	current_state = State.idle
-
-func atirar_strong_bow_attack():
-	current_state = State.strong_bow_attack
-	anim.play("strong_bow_attack")
-	await anim.animation_finished
-	current_state = State.idle
-
-func tomar_hit():
-	current_state = State.hit
-	anim.play("hit")
-	await anim.animation_finished
-	current_state = State.idle
-
-func morrer():
-	current_state = State.die
-	anim.play("die")
+func die():
+	current_state = State.DIE
+	animation_player.play("die")
+	await animation_player.animation_finished
+	queue_free()

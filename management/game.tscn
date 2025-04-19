@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://be2c6eji2iw28"]
+
+[ext_resource type="PackedScene" uid="uid://btmr2e0tyaa3j" path="res://cenas fundo/terrain_maneger.tscn" id="1_q5hyp"]
+[ext_resource type="PackedScene" uid="uid://ia6iku3g6cun" path="res://cenas players/index.tscn" id="2_hnhf5"]
+[ext_resource type="PackedScene" uid="uid://cnnvlsf7bei32" path="res://cenas players/orc.tscn" id="3_wlejs"]
+
+[node name="Game" type="Node2D"]
+
+[node name="TerrainManeger" parent="." instance=ExtResource("1_q5hyp")]
+
+[node name="Main" parent="." instance=ExtResource("2_hnhf5")]
+position = Vector2(-95, -8)
+
+[node name="Orc" parent="." instance=ExtResource("3_wlejs")]
+position = Vector2(1076, -173)

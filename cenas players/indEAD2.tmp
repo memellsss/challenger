@@ -1,0 +1,185 @@
+[gd_scene load_steps=14 format=3 uid="uid://ia6iku3g6cun"]
+
+[ext_resource type="Script" path="res://cenas players/player.gd" id="1_m5lb8"]
+[ext_resource type="Texture2D" uid="uid://bvuegxke7rv8n" path="res://caracters/Demo Soldier&Orc/Tiny RPG Character Asset Pack -Demo Soldier&Orc/Soldier/Soldier.png" id="2_8ve1d"]
+
+[sub_resource type="Animation" id="Animation_coup0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Soldier:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_4o6et"]
+resource_name = "bow"
+length = 1.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Soldier:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.00930272, 0.125587, 0.246522, 0.367457, 0.488393, 0.625608, 0.75352, 0.883758, 1.01632),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [36, 37, 38, 39, 40, 41, 42, 43, 44]
+}
+
+[sub_resource type="Animation" id="Animation_8pv6h"]
+resource_name = "die"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Soldier:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0116284, 0.153495, 0.286059, 0.427925, 0.579094),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [63, 64, 65, 66, 67]
+}
+
+[sub_resource type="Animation" id="Animation_cblfh"]
+resource_name = "hit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Soldier:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0162798, 0.160472, 0.311641, 0.439553),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [54, 55, 56, 57]
+}
+
+[sub_resource type="Animation" id="Animation_j7or1"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Soldier:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.143414, 0.265897, 0.395357, 0.515515, 0.635671, 0.758155),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 0]
+}
+
+[sub_resource type="Animation" id="Animation_5l3tm"]
+resource_name = "strong_attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Soldier:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.00697704, 0.146518, 0.286059, 0.420948, 0.562814, 0.697704, 0.830268),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [27, 28, 29, 30, 31, 32, 27]
+}
+
+[sub_resource type="Animation" id="Animation_n0nvc"]
+resource_name = "strong_bow"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Soldier:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.00232568, 0.130238, 0.269779, 0.400017, 0.523278, 0.653516, 0.765149, 0.88841, 0.997717, 1.10702),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [45, 46, 47, 48, 49, 50, 51, 52, 53, 45]
+}
+
+[sub_resource type="Animation" id="Animation_opfj6"]
+resource_name = "sword"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Soldier:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.144188, 0.272096, 0.395353, 0.513958, 0.631012, 0.737989),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 19, 20, 21, 22, 23, 0]
+}
+
+[sub_resource type="Animation" id="Animation_wjmo8"]
+resource_name = "walk"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Soldier:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.134885, 0.244188, 0.36977, 0.488376, 0.611633, 0.737215, 0.851169, 0.967449, 1.08605),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 9, 10, 11, 12, 13, 14, 15, 16, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q3r4w"]
+_data = {
+"RESET": SubResource("Animation_coup0"),
+"bow": SubResource("Animation_4o6et"),
+"die": SubResource("Animation_8pv6h"),
+"hit": SubResource("Animation_cblfh"),
+"idle": SubResource("Animation_j7or1"),
+"strong_attack": SubResource("Animation_5l3tm"),
+"strong_bow": SubResource("Animation_n0nvc"),
+"sword": SubResource("Animation_opfj6"),
+"walk": SubResource("Animation_wjmo8")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7c02p"]
+radius = 2.0
+height = 10.0
+
+[node name="main" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_m5lb8")
+
+[node name="Soldier" type="Sprite2D" parent="Player"]
+texture_filter = 1
+position = Vector2(14, -7)
+texture = ExtResource("2_8ve1d")
+hframes = 9
+vframes = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Soldier"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_q3r4w")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(15, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_7c02p")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-2, 2)

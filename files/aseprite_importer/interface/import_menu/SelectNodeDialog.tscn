@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://ugmrcr17e4hk"]
+
+[ext_resource type="Script" path="res://files/aseprite_importer/interface/import_menu/SelectNodeDialog.gd" id="1"]
+
+[node name="SelectNodeDialog" type="Popup"]
+title = "Select a Node"
+size = Vector2i(300, 200)
+visible = true
+unresizable = false
+borderless = false
+min_size = Vector2i(300, 200)
+script = ExtResource("1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Body" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="EditedSceneView" type="VBoxContainer" parent="MarginContainer/Body"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="MarginContainer/Body/EditedSceneView"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Current Edited Scene:"
+
+[node name="SceneTree" type="Tree" parent="MarginContainer/Body/EditedSceneView"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+
+[node name="Footer" type="HBoxContainer" parent="MarginContainer/Body"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ConfirmButton" type="Button" parent="MarginContainer/Body/Footer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Select Node"
+
+[node name="CancelButton" type="Button" parent="MarginContainer/Body/Footer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Cancel"
+
+[node name="AlertDialog" type="AcceptDialog" parent="."]

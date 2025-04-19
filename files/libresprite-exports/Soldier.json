@@ -1,0 +1,369 @@
+{ "frames": {
+   "Soldier 0.aseprite": {
+	"frame": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 1.aseprite": {
+	"frame": { "x": 100, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 2.aseprite": {
+	"frame": { "x": 200, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 3.aseprite": {
+	"frame": { "x": 300, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 4.aseprite": {
+	"frame": { "x": 400, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 5.aseprite": {
+	"frame": { "x": 500, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 6.aseprite": {
+	"frame": { "x": 600, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 7.aseprite": {
+	"frame": { "x": 700, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 8.aseprite": {
+	"frame": { "x": 800, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 9.aseprite": {
+	"frame": { "x": 900, "y": 0, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 10.aseprite": {
+	"frame": { "x": 0, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 11.aseprite": {
+	"frame": { "x": 100, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 12.aseprite": {
+	"frame": { "x": 200, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 13.aseprite": {
+	"frame": { "x": 300, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 14.aseprite": {
+	"frame": { "x": 400, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 15.aseprite": {
+	"frame": { "x": 500, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 16.aseprite": {
+	"frame": { "x": 600, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 17.aseprite": {
+	"frame": { "x": 700, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 18.aseprite": {
+	"frame": { "x": 800, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 19.aseprite": {
+	"frame": { "x": 900, "y": 100, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 20.aseprite": {
+	"frame": { "x": 0, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 21.aseprite": {
+	"frame": { "x": 100, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 22.aseprite": {
+	"frame": { "x": 200, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 23.aseprite": {
+	"frame": { "x": 300, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 24.aseprite": {
+	"frame": { "x": 400, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 25.aseprite": {
+	"frame": { "x": 500, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 26.aseprite": {
+	"frame": { "x": 600, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 27.aseprite": {
+	"frame": { "x": 700, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 28.aseprite": {
+	"frame": { "x": 800, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 29.aseprite": {
+	"frame": { "x": 900, "y": 200, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 30.aseprite": {
+	"frame": { "x": 0, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 31.aseprite": {
+	"frame": { "x": 100, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 32.aseprite": {
+	"frame": { "x": 200, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 33.aseprite": {
+	"frame": { "x": 300, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 34.aseprite": {
+	"frame": { "x": 400, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 35.aseprite": {
+	"frame": { "x": 500, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 36.aseprite": {
+	"frame": { "x": 600, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 37.aseprite": {
+	"frame": { "x": 700, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 38.aseprite": {
+	"frame": { "x": 800, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 39.aseprite": {
+	"frame": { "x": 900, "y": 300, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 40.aseprite": {
+	"frame": { "x": 0, "y": 400, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 41.aseprite": {
+	"frame": { "x": 100, "y": 400, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 100
+   },
+   "Soldier 42.aseprite": {
+	"frame": { "x": 200, "y": 400, "w": 100, "h": 100 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+	"sourceSize": { "w": 100, "h": 100 },
+	"duration": 600
+   }
+ },
+ "meta": {
+  "app": "https://github.com/LibreSprite/LibreSprite/",
+  "version": "1.2-973d0e3d-SDL",
+  "image": "Soldier.png",
+  "format": "RGBA8888",
+  "size": { "w": 1024, "h": 512 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Idle", "from": 0, "to": 5, "direction": "forward" },
+   { "name": "Walk", "from": 6, "to": 13, "direction": "forward" },
+   { "name": "Attack01", "from": 14, "to": 19, "direction": "forward" },
+   { "name": "Attack02", "from": 20, "to": 25, "direction": "forward" },
+   { "name": "Attack03", "from": 26, "to": 34, "direction": "forward" },
+   { "name": "Hurt", "from": 35, "to": 38, "direction": "forward" },
+   { "name": "Death", "from": 39, "to": 42, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "shadow", "opacity": 255, "blendMode": "normal" },
+   { "name": "main", "opacity": 255, "blendMode": "normal" },
+   { "name": "effect", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}
